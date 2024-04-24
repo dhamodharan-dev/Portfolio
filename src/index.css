@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Prompt", sans-serif;
+  font-weight: 500;
+  background-color: #191919;
+  color: #fff;
+}
+
+@media screen and (min-width: 2000px) {
+  body {
+    font-size: 2rem;
+  }
+  .welcome-text {
+    font-size: 3.5rem;
+  }
+  .intro-text {
+    font-size: 3.9rem;
+  }
+  .role {
+    font-size: 2.5rem;
+  }
+  .btn {
+    font-size: 2.3rem;
+  }
+  .skills-container {
+    gap: 3rem;
+  }
+  .logo {
+    width: 300px;
+  }
+  .home > .aside2 > .my-pic {
+    width: 500px;
+    height: 500px;
+  }
+  .about {
+    margin-top: 3rem;
+  }
+  .about-container {
+    font-size: 2.3rem;
+  }
+  .title{
+    font-size: 3rem;
+  }
+  .item-img {
+    width: 200px;
+    height: 200px;
+  }
+  .item-name{
+    font-size: 2rem;
+  }
+  .project{
+    margin: 2rem;
+  }
+  .project-img{
+    width: 700px;
+  }
+  .project-title{
+    font-size: 2.5rem;
+  }
+  .btn-4{
+    font-size: 2rem;
+    padding: 20px;
+  }
+  .contact-icon{
+    font-size: 6rem;
+  }
+  .social-icons{
+    gap: 3rem 6rem;
+  }
+  .email{
+    font-size: 2.5rem;
+  }
+}
