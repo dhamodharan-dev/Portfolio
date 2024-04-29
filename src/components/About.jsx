@@ -22,8 +22,8 @@ function About() {
     <section className='about' id='about'>
       <h1 className='about-me title'>About me</h1>
       <div className="about-container">
-        <p>Hello! I'm a dedicated and enthusiastic React developer with a strong foundation in web development. I am completed a course in HTML, CSS, and JavaScript on Udemy, which has given me a solid grounding in the essentials of front end development.I'm always looking for opportunities to learn new technologies and grow as a developer. When I'm not coding, you can find me exploring new technologies, working on personal projects.
-          <br />  Let's connect! I'm open to opportunities in web development and collaboration. Feel free to reach out to me if you'd like to discuss potential projects, ideas, or just talk tech!</p>
+        <p>Hello! I'm a dedicated and enthusiastic React developer with a strong foundation in web development. I have completed a course in HTML, CSS, and JavaScript on Udemy, which has given me a solid grounding in the essentials of front-end development. I'm always looking for opportunities to learn new technologies and grow as a developer. When I'm not coding, you can find me exploring new technologies and working on personal projects.
+          <br />Let's connect! I'm open to opportunities in web development and collaboration. Feel free to reach out to me if you'd like to discuss potential projects and ideas or just talk tech!</p>
         <h1 className="skills title">Skills</h1>
         <div className='skills-container'>
           {skillItems.map((items) => {

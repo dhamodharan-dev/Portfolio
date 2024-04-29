@@ -43,7 +43,7 @@ function Home() {
         <h1 className='intro-text'>I am <span className='name'>Dhamodharan B</span></h1>
         <h3 className="role">{`Junior ${role}`}</h3>
         <div className="text-box">
-          <a href="#" className="btn btn-white btn-animate">Resume</a>
+          <a href="https://drive.google.com/file/d/1bKMKBBzyMmobH1OUTgpCG53HdXgVdPfv/view?usp=drive_link" className="btn btn-white btn-animate">Resume</a>
         </div>
       </aside>
       <aside className='aside2'>
