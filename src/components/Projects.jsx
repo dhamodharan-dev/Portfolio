@@ -6,7 +6,7 @@ import Project3 from '../assets/p3.png'
 
 function Projects() {
     return (
-        <section className='projects-section'>
+        <section id='projects' className='projects-section'>
             <h1 id='title'>Projects</h1>
             <div className="projects-container">
                 <article className="project p-1">
