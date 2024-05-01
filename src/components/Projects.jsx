@@ -14,6 +14,13 @@ function Projects() {
                     <div className='project-details'>
                         <h1 className="project-title">Property management system</h1>
                         <p className="project-about">This is a MERN stack project called THRIVNEST the front end is deployed using Netlify and the back end is hosted using Render.</p>
+                        <div className='tech-container'>
+                            <p className='tech'>CSS</p>
+                            <p className='tech'>React JS</p>
+                            <p className='tech'>Node JS</p>
+                            <p className='tech'>Express JS</p>
+                            <p className='tech'>MongoDB</p>
+                        </div>
                         <div className="projects-btn">
                             <a href="https://main--thrivnest.netlify.app/" target='_blank'><button className="btn-4">Live link</button></a>
                             <a href="https://github.com/Dhamodharan-dev/ThrivNest" target='_blank'><button className="btn-4">Source code</button></a>
@@ -24,6 +31,10 @@ function Projects() {
                     <div className='project-details'>
                         <h1 className="project-title">To-do list</h1>
                         <p className="project-about">This project is build using Vite js and to-do lists are stored in local storage. It is deployed using Netlify.</p>
+                        <div className='tech-container'>
+                            <p className='tech'>CSS</p>
+                            <p className='tech'>Vite JS</p>
+                        </div>
                         <div className="projects-btn">
                             <a href="https://to-do-list-react-js.web.app/" target='_blank'><button className="btn-4">Live link</button></a>
                             <a href="https://github.com/Dhamodharan-dev/to-do-list" target='_blank'><button className="btn-4">Source code</button></a>
@@ -36,6 +47,10 @@ function Projects() {
                     <div className='project-details'>
                         <h1 className="project-title">South Indian Restaurant</h1>
                         <p className="project-about">This project is build using Vite js and use tailwindcss for responsive design. It is deployed using Firebase</p>
+                        <div className='tech-container'>
+                            <p className='tech'>TailwindCSS</p>
+                            <p className='tech'>Vite JS</p>
+                        </div>
                         <div className="projects-btn">
                             <a href="https://south-indian-restaurant.web.app/" target='_blank'><button className="btn-4">Live link</button></a>
                             <a href="https://github.com/Dhamodharan-dev/My-Restaurant" target='_blank'><button className="btn-4">Source code</button></a>

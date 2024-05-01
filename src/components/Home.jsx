@@ -43,7 +43,7 @@ function Home() {
         <h1 className='intro-text'>I am <span className='name'>Dhamodharan B</span></h1>
         <h3 className="role">{`Junior ${role}`}</h3>
         <div className="text-box">
-          <a target='_blank' href="https://drive.google.com/file/d/1Q0KuJZn6Th96iB8A2lOzH1MbdN-Kgbhz/view?usp=drive_link" className="btn btn-white btn-animate">Resume</a>
+          <a target='_blank' href="https://drive.google.com/file/d/1hGoF3EvY3o0RGyZEq3HZi73kvGJ3znUr/view?usp=drive_link" className="btn btn-white btn-animate">Resume</a>
         </div>
       </aside>
       <aside className='aside2'>
