@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import myPic from '../assets/my pic.png'
+import myPic from '../assets/my pic.gif'
 import '../css/Home.css'
 
 function Home() {

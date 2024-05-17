@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import Logo from '../assets/logo.png'
 import '../css/Navbar.css'
-import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -13,7 +12,7 @@ const Navbar = () => {
 
   return (
     <div className='nav-bar' id='home'>
-      <img src={Logo} alt="Logo" className='logo' />
+      <h1 className='logo'>Dhamodharan.dev</h1>
       <div onClick={handleNav} className={nav ? 'x-menu' : 'menu'}>
         {nav ? <div><AiOutlineClose size={25} /></div> : <AiOutlineMenu size={25} />}
       </div>

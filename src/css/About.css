@@ -13,7 +13,7 @@
     justify-content: center;
     font-size: 1.1rem;
     padding: 2rem;
-    border: 2px solid #ffc94a;
+    border: 2px solid #FFBA24;
     border-radius: 10px;
 }
 
@@ -23,7 +23,7 @@
 }
 
 .skills {
-    color: #ffc94a;
+    color: #FFBA24;
 }
 
 .skills-container {
