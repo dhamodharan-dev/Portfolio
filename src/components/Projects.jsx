@@ -32,8 +32,9 @@ function Projects() {
                         <h1 className="project-title">To-do list</h1>
                         <p className="project-about">This project is build using Vite js and to-do lists are stored in local storage. It is deployed using Netlify.</p>
                         <div className='tech-container'>
-                            <p className='tech'>CSS</p>
                             <p className='tech'>Vite JS</p>
+                            <p className='tech'>JavaScript</p>
+                            <p className='tech'>CSS</p>
                         </div>
                         <div className="projects-btn">
                             <a href="https://to-do-list-react-js.web.app/" target='_blank'><button className="btn-4">Live link</button></a>

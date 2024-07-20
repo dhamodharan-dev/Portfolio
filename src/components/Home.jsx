@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import myPic from '../assets/my pic.gif'
+import myPic from '../assets/my pic.png'
 import '../css/Home.css'
 
 function Home() {
@@ -43,7 +43,7 @@ function Home() {
         <h1 className='intro-text'>I am <span className='name'>Dhamodharan B</span></h1>
         <h3 className="role">{`Junior ${role}`}</h3>
         <div className="text-box">
-          <a target='_blank' href="https://drive.google.com/file/d/1lT-gw0_WAoT68xLmyHw9UJTv3YcKUVrn/view?usp=drive_link" className="btn btn-white btn-animate">Resume</a>
+          <a target='_blank' href="https://drive.google.com/file/d/1lT-gw0_WAoT68xLmyHw9UJTv3YcKUVrn/view" className="btn btn-white btn-animate">Resume</a>
         </div>
       </aside>
       <aside className='aside2'>

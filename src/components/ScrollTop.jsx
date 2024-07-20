@@ -32,7 +32,7 @@ function ScrollTop() {
                     style={{ 
                         position: 'fixed', 
                         bottom: '30px', 
-                        right: '30px', 
+                        right: '15px', 
                         width: '30px', 
                         cursor: 'pointer' 
                     }}

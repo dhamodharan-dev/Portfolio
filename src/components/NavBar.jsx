@@ -1,26 +1,26 @@
 import React, { useState } from 'react';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
-import Logo from '../assets/logo.png'
+import Logo from '../assets/favicon.png'
 import '../css/Navbar.css'
 
 const Navbar = () => {
-  const [nav, setNav] = useState(false);
+  const [navopen, setNavopen] = useState(false);
 
   const handleNav = () => {
-    setNav(!nav);
+    setNavopen(!navopen);
   };
 
   return (
     <div className='nav-bar' id='home'>
-      <h1 className='logo'>Dhamodharan.dev</h1>
-      <div onClick={handleNav} className={nav ? 'x-menu' : 'menu'}>
-        {nav ? <div><AiOutlineClose size={25} /></div> : <AiOutlineMenu size={25} />}
+    <img src={Logo} alt="Logo" className='logo'/>
+      <div onClick={handleNav} className={navopen ? 'x-menu' : 'menu'}>
+        {navopen ? <AiOutlineClose size={25} /> : <AiOutlineMenu size={25} />}
       </div>
-      <ul className={nav ? 'nav-open' : 'nav-ul'}>
-        <a onClick={nav && handleNav} href="#home"><li className='nav-li'>Home</li></a>
-        <a onClick={nav && handleNav} href="#about"><li className='nav-li'>About</li></a>
-        <a onClick={nav && handleNav} href="#projects"><li className='nav-li'>Projects</li></a>
-        <a onClick={nav && handleNav} href="#contact"><li className='nav-li'>Contact</li></a>
+      <ul className={navopen ? 'nav-open' : 'nav-ul'}>
+        <li className='nav-li'><a onClick={navopen ? handleNav : null} href="#home">Home</a></li>
+        <li className='nav-li'><a onClick={navopen ? handleNav : null} href="#about">About</a></li>
+        <li className='nav-li'><a onClick={navopen ? handleNav : null} href="#projects">Projects</a></li>
+        <li className='nav-li'><a onClick={navopen ? handleNav : null} href="#contact">Contact</a></li>
       </ul>
     </div>
   );

@@ -1,4 +1,4 @@
-.contact-container{
+.contact-container {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -8,38 +8,123 @@
     color: #fff;
     padding-bottom: 2rem;
 }
-.social-icons{
+
+.social-icons {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 1rem 3rem;
 }
-.social-icons>p{
+
+.social-icons>p {
     margin: 0;
 }
-.contact-icon{
+
+.contact-icon {
     font-size: 3rem;
     transition: all ease-in-out 0.5s;
 }
-.contact-icon:hover{
+
+.contact-icon:hover {
     scale: 1.3;
     transition: all ease-in-out 0.5s;
 }
-#insta:hover{
+
+#insta {
     color: rgb(238, 44, 76);
 }
-#lin:hover{
+
+#lin {
     color: #1469C7;
 }
-.email{
-    font-size: 1.2rem;
-    color: #FFBA24;
+
+#email {
+    color: #FCAE1B;
 }
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.name-input>input,
+.email-input>input {
+    height: 40px;
+    width: 350px;
+    outline: none;
+    padding-left: 10px;
+}
+
+.message-input>textarea {
+    height: 80px;
+    width: 350px;
+    outline: none;
+    padding-left: 10px;
+}
+
+.name-input,
+.email-input,
+.message-input {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.submit {
+    padding: 10px;
+    background-color: #df1313;
+    color: #ffffff;
+    border-radius: 15px;
+    transition: all ease-in-out 0.4ms;
+}
+
+.submit:hover {
+    transform: translateY(-3px);
+    transition: all ease-in-out 0.4ms;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .name-input>input,
+    .email-input>input{
+        width: 240px;
+        height: 30px;
+    }
+    .message-input>textarea{
+        width: 240px;
+        height: 70px;
+    }
+}
+
 @media screen and (max-width: 500px) {
-    .contact-icon{
+    .contact-icon {
         font-size: 2rem;
     }
-    .email{
-        font-size: 1rem;
+    .name-input>input,
+    .email-input>input{
+        width: 200px;
+        height: 30px;
+    }
+    .message-input>textarea{
+        width: 200px;
+        height: 70px;
+    }
+}
+@media screen and (max-width: 350px) {
+
+    .name-input>input,
+    .email-input>input,
+    .message-input>textarea {
+        width: 180px;
+    }
+
+    .intro-text {
+        font-size: 1.5rem;
     }
 }

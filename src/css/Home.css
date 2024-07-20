@@ -1,10 +1,29 @@
 .home {
+    position: relative;
     width: 100%;
-    height: 85dvh;
+    height: 90dvh;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 4rem;
+    gap: 2rem;
+    background: url('../assets/hero bg.png') no-repeat center;
+    background-size: cover;
+}
+
+.home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 0;
+}
+
+.home > * {
+    position: relative;
+    z-index: 1;
 }
 
 .aside1 {
@@ -16,68 +35,35 @@
 }
 
 .my-pic {
-    width: 20rem;
+    width: 22rem;
 }
-.home>h3,
+
+.home > h3,
 h1,
 h3 {
     margin: 0;
 }
 
 .name {
-    color: #b52615;
-}
-.resume-btn {
-    padding: 10px;
-    border-radius: 10px;
-    background-color: #b52615;
+    color: #FCAE1B;
+    text-shadow: #000000;
 }
 
 a {
     text-decoration: none;
     color: #fff;
 }
-.role{
+
+.role {
     font-family: 'Courier New', Courier, monospace;
     font-size: 1.2rem;
 }
-.type-animation{
+
+.type-animation {
     width: 2px;
     height: 10px;
     background-color: #fff;
 }
-
-@media screen and (max-width: 880px) {
-    .aside1 {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        font-size: 1.2rem;
-        gap: 1rem;
-    }
-}
-
-@media screen and (max-width: 700px) {
-    .home {
-        height: 90vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 0;
-    }
-
-    .aside1 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .my-pic {
-        width: 200px;
-        margin-top: 20px;
-    }
-}
-
 
 .text-box {
     position: relative;
@@ -145,5 +131,48 @@ a {
     100% {
         opacity: 1;
         transform: translateY(0px);
+    }
+}
+@media screen and (max-width: 880px) {
+    .aside1 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        font-size: 1.2rem;
+        gap: 1rem;
+        margin-left: -20px;
+    }
+
+    .my-pic {
+        width: 20rem;
+    }
+    
+    .name-input,
+    .email-input,
+    .message-input {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 710px) {
+    .home {
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0;
+        margin-left: 0;
+    }
+
+    .aside1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .my-pic {
+        width: 250px;
+        margin-top: 20px;
     }
 }
