@@ -10,33 +10,34 @@ function Contact() {
         const formData = new FormData(event.target);
 
         try {
-            const response = await fetch('https://formspree.io/f/xqazezkb', {
+            const response = await fetch('/api/f/xqazezkb', {
                 method: 'POST',
-                body: formData
-            });
-
+                body: formData,
+            });            
             if (response.ok) {
                 alert("Success!!!");
                 event.target.reset();
             } else {
-                alert("Failed!!!");
+                console.error('Failed to submit:', response.statusText);
+                alert("Failed to send your message. Please try again.");
             }
         } catch (error) {
-            alert("Error!!!");
+            console.error('Error submitting form:', error);
+            alert("An error occurred. Please try again later.");
         }
     };
 
     return (
         <div className='contact-container'>
-            <h1 className='title' id='contact'>Social handles</h1>
+            <h1 className='title' id='contact'>Social Handles</h1>
             <div className='social-icons'>
-                <a target='_blank' href='https://www.instagram.com/imdhamu/' className='contact-icon' id='insta'>
+                <a target='_blank' rel='noopener noreferrer' href='https://www.instagram.com/imdhamu/' className='contact-icon' id='insta'>
                     <FontAwesomeIcon icon={faInstagram} title="Instagram" />
                 </a>
-                <a target='_blank' href='https://www.linkedin.com/in/dhamodharan-dev' className='contact-icon' id='lin'>
+                <a target='_blank' rel='noopener noreferrer' href='https://www.linkedin.com/in/dhamodharan-dev' className='contact-icon' id='lin'>
                     <FontAwesomeIcon icon={faLinkedin} title="LinkedIn" />
                 </a>
-                <a target='_blank' href='https://github.com/Dhamodharan-dev' className='contact-icon'>
+                <a target='_blank' rel='noopener noreferrer' href='https://github.com/Dhamodharan-dev' className='contact-icon'>
                     <FontAwesomeIcon icon={faGithub} title="GitHub" />
                 </a>
                 <a href="mailto:myself.dhamodharan@gmail.com" className='contact-icon' id='email'>
